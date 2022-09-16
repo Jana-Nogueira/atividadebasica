@@ -1,0 +1,33 @@
+<template>
+  <lightning-card title="Template IF">
+    <template if:false={visivel}> 
+    <div class="slds-p-around_medium">
+     <h1>Empresa: {Empresa} </h1>
+     <p>CNPJ : {CNPJ}</p>
+     <p>Endereco : {Endereco}</p>   
+
+    </div>
+    </template>
+
+    <template if:true={visivel}> 
+    <div class="slds-p-around_medium">
+      <h1>Empresa: {Empresa} </h1>
+      <p>CNPJ : {CNPJ}</p>
+      <p>Endereco : {Endereco}</p>   
+
+    </div>
+    </template>
+
+    <template if:true={visivel}> 
+    <div class="slds-p-around_medium">
+      <h1>Empresa: {Empresa} </h1>
+      <p>CNPJ : {CNPJ}</p>
+      <p>Endereco : {Endereco}</p>   
+
+    </div>
+    </template>
+
+        <lightning-button variant="destructive" label="Destructive" onclick={onclick} title="Destructive action" class="slds-m-left_x-small">
+        </lightning-button>
+      </lightning-card>
+</template>
